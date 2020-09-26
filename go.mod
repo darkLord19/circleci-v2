@@ -1,4 +1,4 @@
-module github.com/TomTucka/go-circleci
+module github.com/TomTucka/go-circleci-v2
 
 go 1.14
 
