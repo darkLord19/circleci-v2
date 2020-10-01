@@ -511,7 +511,7 @@ func (a *PipelineApiService) ListPipelines(ctx context.Context, orgSlug string, 
 	)
 
 	// create path and map variables
-	localVarPath := a.client.cfg.BasePath + "/pipeline"
+	localVarPath := a.client.cfg.BasePath + "/pipeline?org-slug={org-slug}&mine={mine}"
 	localVarPath = strings.Replace(localVarPath, "{"+"org-slug"+"}", fmt.Sprintf("%v", orgSlug), -1)
 	localVarPath = strings.Replace(localVarPath, "{"+"mine"+"}", fmt.Sprintf("%v", mine), -1)
 
